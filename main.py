@@ -145,7 +145,7 @@ def pre_setup():
         Arguments object
         """
         host = "127.0.0.1"
-        port = 8890
+        port = 8888
         base_url = None
         sync_repo = "skip"
         disable_image_log = True
@@ -183,7 +183,7 @@ def pre_setup():
 if __name__ == "__main__":
     logger.std_info(f"[Fooocus API] Python {sys.version}")
     logger.std_info(f"[Fooocus API] Fooocus API version: {version}")
-    
+
     from fooocusapi.base_args import add_base_args
 
     parser = argparse.ArgumentParser()
