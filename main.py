@@ -183,3 +183,11 @@ def pre_setup():
 if __name__ == "__main__":
     logger.std_info(f"[Fooocus API] Python {sys.version}")
     logger.std_info(f"[Fooocus API] Fooocus API version: {version}")
+    
+    from fooocusapi.base_args import add_base_args
+
+    parser = argparse.ArgumentParser()
+    add_base_args(parser, True)
+
+    args, _ = parser.parse_known_args()
+    install_dependents(skip=args.skip_pip)
