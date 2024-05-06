@@ -21,7 +21,7 @@ python-multipart==0.0.6
 uvicorn[standard]==0.23.2
 colorlog
 requests
-numpy
+numpy==1.25.2
 sqlalchemy
 packaging
 rich
